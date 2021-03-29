@@ -12,7 +12,6 @@
 		5F82A76C260C802A0069EF5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F82A76B260C802A0069EF5C /* Assets.xcassets */; };
 		5F82A76F260C802A0069EF5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F82A76E260C802A0069EF5C /* Preview Assets.xcassets */; };
 		5F82A779260D00D30069EF5C /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F82A778260D00D30069EF5C /* Circle.swift */; };
-		5F82A780260F35480069EF5C /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F82A77F260F35480069EF5C /* Lights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		5F82A76E260C802A0069EF5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F82A770260C802A0069EF5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F82A778260D00D30069EF5C /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
-		5F82A77F260F35480069EF5C /* Lights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 			children = (
 				5F82A767260C80260069EF5C /* Traffic_light_SwiftUIApp.swift */,
 				5F82A769260C80260069EF5C /* ContentView.swift */,
-				5F82A77F260F35480069EF5C /* Lights.swift */,
 				5F82A778260D00D30069EF5C /* Circle.swift */,
 				5F82A76B260C802A0069EF5C /* Assets.xcassets */,
 				5F82A770260C802A0069EF5C /* Info.plist */,
@@ -146,7 +143,6 @@
 			files = (
 				5F82A76A260C80260069EF5C /* ContentView.swift in Sources */,
 				5F82A768260C80260069EF5C /* Traffic_light_SwiftUIApp.swift in Sources */,
-				5F82A780260F35480069EF5C /* Lights.swift in Sources */,
 				5F82A779260D00D30069EF5C /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

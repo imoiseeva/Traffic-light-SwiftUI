@@ -7,59 +7,45 @@
 
 import SwiftUI
 
+
+enum ColorNow {
+    case red, yellow, green
+}
+
 struct ContentView: View {
     
-    enum ColorNow {
-        case red, yellow, green
-    }
-    private var colorNow = ColorNow.red
+    @State private var colorNow = ColorNow.red
     
     var body: some View {
         VStack {
-            Lights()
-            
+            CircleColor(color: .red, brightness: colorNow == .red ? 0 : 0.3)
+            CircleColor(color: .yellow, brightness: colorNow == .yellow ? 0 : 0.3)
+            CircleColor(color: .green, brightness: colorNow == .green ? 0 : 0.3)
+            Spacer()
             Button(action: {changeColor()})
             {
-                Text("Tap count")
+                Text("Press")
                     .font(.title)
-            }}
-            
+                    .fontWeight(.bold)
+            }
             .padding()
+        }
+        .padding()
     }
     
-    func changeColor() {
+    private func changeColor() {
         
         switch colorNow {
-        
-        case .red:
-            CircleColor(color: .red).brightness(0)
-            CircleColor(color: .yellow)
-                .brightness(0.5)
-            CircleColor(color: .green)
-                .brightness(0.5)
-        case .yellow:
-            CircleColor(color: .yellow)
-                .brightness(0)
-            CircleColor(color: .red)
-                .brightness(0.5)
-            CircleColor(color: .green)
-                .brightness(0.5)
-        case .green:
-            CircleColor(color: .green)
-                .brightness(0)
-            CircleColor(color: .red)
-                .brightness(0.5)
-            CircleColor(color: .yellow)
-                .brightness(0.5)
+        case .red: colorNow = .yellow
+        case .yellow: colorNow = .green
+        case .green: colorNow = .red
         }
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
             ContentView()
         }
     }
